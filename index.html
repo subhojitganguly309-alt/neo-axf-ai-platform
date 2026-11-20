@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,137 +6,144 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#07111f">
 <title>NEO-AXF AI TECHNOLOGIES</title>
-<meta name="description" content="NEO-AXF AI Technologies — One platform for AI, creativity, research and innovation.">
+<meta name="description" content="NEO-AXF AI Technologies - Your unified AI workspace.">
 
 <style>
 :root {
   --bg:#07111f;
   --panel:#101e31;
-  --panel2:#14253b;
   --blue:#318bff;
   --cyan:#31d8ed;
   --text:#f4f8ff;
   --muted:#a7b6ca;
-  --border:rgba(255,255,255,.10);
+  --border:rgba(255,255,255,.12);
 }
-* {box-sizing:border-box;margin:0;padding:0}
-html {scroll-behavior:smooth}
-body {
-  background:var(--bg);
-  color:var(--text);
-  font-family:Arial,Helvetica,sans-serif;
-  line-height:1.6;
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;line-height:1.6
 }
-button,input,textarea {font:inherit}
-button {cursor:pointer}
-a {color:inherit;text-decoration:none}
-.container {width:min(1160px,92%);margin:auto}
-header {
+button,input,textarea,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit;text-decoration:none}
+.container{width:min(1160px,92%);margin:auto}
+header{
   position:sticky;top:0;z-index:10;
-  background:rgba(7,17,31,.94);
-  border-bottom:1px solid var(--border);
-  backdrop-filter:blur(12px);
+  background:rgba(7,17,31,.96);
+  border-bottom:1px solid var(--border)
 }
-.nav {
-  min-height:76px;display:flex;align-items:center;
-  justify-content:space-between;gap:20px;
+.nav{
+  min-height:75px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px
 }
-.logo {font-size:21px;font-weight:900;letter-spacing:1px}
-.logo span {color:var(--cyan)}
-.navlinks {display:flex;gap:23px;color:var(--muted);font-size:14px}
-.navlinks a:hover {color:white}
-.menu-btn {display:none}
-.hero {
-  padding:95px 0 75px;text-align:center;
-  background:radial-gradient(ellipse at 50% 0%,#123b69 0%,transparent 58%);
+.logo{font-size:22px;font-weight:900;letter-spacing:1px}
+.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:23px;color:var(--muted);font-size:14px}
+.navlinks a:hover{color:white}
+.menu-btn{display:none}
+.hero{
+  padding:90px 0 75px;text-align:center;
+  background:radial-gradient(ellipse at 50% 0%,#123b69 0%,transparent 60%)
 }
-.eyebrow {
+.eyebrow{
   display:inline-block;border:1px solid #2869a9;
-  color:#76c9ff;border-radius:30px;
-  padding:7px 15px;font-size:12px;letter-spacing:2px;
+  color:#76c9ff;border-radius:30px;padding:7px 15px;
+  font-size:12px;letter-spacing:2px
 }
-h1 {
+h1{
   font-size:clamp(38px,7vw,75px);
-  line-height:1.08;margin:25px auto 20px;
-  max-width:900px;
+  line-height:1.08;margin:25px auto 20px;max-width:900px
 }
-.gradient {
+.gradient{
   background:linear-gradient(90deg,#45a0ff,#38e3e9);
-  -webkit-background-clip:text;background-clip:text;color:transparent;
+  -webkit-background-clip:text;background-clip:text;color:transparent
 }
-.hero p {color:var(--muted);max-width:700px;margin:0 auto 30px;font-size:17px}
-.actions {display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
-.btn {
+.hero p{color:var(--muted);max-width:700px;margin:0 auto 30px;font-size:17px}
+.actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}
+.btn{
   border:0;border-radius:10px;padding:13px 22px;
   font-weight:700;background:linear-gradient(90deg,#287bfa,#20bfdc);
-  color:white;
+  color:white
 }
-.btn.secondary {background:transparent;border:1px solid #54718f}
-.btn:hover {filter:brightness(1.15);transform:translateY(-1px)}
-.section {padding:65px 0}
-.section-head {text-align:center;margin-bottom:35px}
-.section-head h2 {font-size:clamp(27px,4vw,42px);margin-bottom:10px}
-.section-head p {color:var(--muted)}
-.grid {
-  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
-}
-.card {
+.btn.secondary{background:transparent;border:1px solid #54718f}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.section{padding:65px 0}
+.section-head{text-align:center;margin-bottom:35px}
+.section-head h2{font-size:clamp(27px,4vw,42px);margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
   background:linear-gradient(145deg,var(--panel),#0b1727);
   border:1px solid var(--border);border-radius:16px;
-  padding:23px;transition:.2s;
+  padding:23px;transition:.2s
 }
-.card:hover {transform:translateY(-5px);border-color:#318bff}
-.card .icon {font-size:30px;margin-bottom:12px}
-.card h3 {font-size:19px;margin-bottom:7px}
-.card p {font-size:14px;color:var(--muted);min-height:48px}
-.card button {
+.card:hover{transform:translateY(-4px);border-color:var(--blue)}
+.card .icon{font-size:30px;margin-bottom:12px}
+.card h3{font-size:19px;margin-bottom:7px}
+.card p{font-size:14px;color:var(--muted);min-height:48px}
+.card button{
   margin-top:17px;width:100%;padding:10px;
   border-radius:8px;border:1px solid #397bb7;
-  color:#b8e4ff;background:#102b48;
+  color:#b8e4ff;background:#102b48
 }
-.card button:hover {background:#194574}
-.panel {
+.card button:hover{background:#194574}
+.panel{
   background:linear-gradient(135deg,#102a49,#101b2c);
-  border:1px solid var(--border);border-radius:20px;padding:30px;
+  border:1px solid var(--border);border-radius:20px;padding:30px
 }
-.form-grid {display:grid;grid-template-columns:1fr 1fr;gap:15px}
-.field {display:flex;flex-direction:column;gap:7px}
-.field.full {grid-column:1/-1}
-label {font-size:13px;color:#c2d2e6}
-input,textarea {
+.field{display:flex;flex-direction:column;gap:8px;margin-bottom:17px}
+label{font-size:14px;color:#c2d2e6}
+input,textarea,select{
   width:100%;background:#081524;color:white;
-  border:1px solid #29425e;border-radius:9px;padding:12px;
-  outline:none;
+  border:1px solid #29425e;border-radius:9px;
+  padding:13px;outline:none
 }
-textarea {min-height:110px;resize:vertical}
-input:focus,textarea:focus {border-color:var(--cyan)}
-.status {color:var(--muted);font-size:13px;margin-top:12px}
-.stats {
+textarea{min-height:130px;resize:vertical}
+input:focus,textarea:focus,select:focus{border-color:var(--cyan)}
+select option{background:#081524;color:white}
+.status{color:var(--muted);font-size:13px;margin-top:12px}
+.reply{
+  display:none;margin-top:22px;padding:20px;
+  background:#081524;border:1px solid #29425e;
+  border-radius:12px;white-space:pre-wrap;
+  overflow-wrap:anywhere
+}
+.reply h3{color:var(--cyan);margin-bottom:10px}
+.stats{
   display:grid;grid-template-columns:repeat(3,1fr);
-  gap:15px;margin-top:35px;
+  gap:15px;margin-top:35px
 }
-.stat {text-align:center;padding:20px;background:#0e1d30;border-radius:12px}
-.stat strong {font-size:27px;color:#59c8ff;display:block}
-.stat span {color:var(--muted);font-size:13px}
-footer {
+.stat{text-align:center;padding:20px;background:#0e1d30;border-radius:12px}
+.stat strong{font-size:27px;color:#59c8ff;display:block}
+.stat span{color:var(--muted);font-size:13px}
+footer{
   border-top:1px solid var(--border);
-  padding:30px 0;color:var(--muted);text-align:center;font-size:13px;
+  padding:30px 0;color:var(--muted);
+  text-align:center;font-size:13px
 }
-@media(max-width:800px) {
-  .grid {grid-template-columns:repeat(2,1fr)}
-  .navlinks {display:none}
-  .menu-btn {display:block;background:none;color:white;border:1px solid var(--border);padding:8px 12px;border-radius:8px}
-  .navlinks.open {display:flex;position:absolute;top:76px;left:0;right:0;background:#0b192a;padding:20px;flex-direction:column}
+@media(max-width:800px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .navlinks{display:none}
+  .menu-btn{
+    display:block;background:none;color:white;
+    border:1px solid var(--border);padding:8px 12px;border-radius:8px
+  }
+  .navlinks.open{
+    display:flex;position:absolute;top:75px;left:0;right:0;
+    background:#0b192a;padding:20px;flex-direction:column
+  }
 }
-@media(max-width:560px) {
-  .grid,.form-grid,.stats {grid-template-columns:1fr}
-  .field.full {grid-column:auto}
-  .hero {padding:70px 0 55px}
+@media(max-width:560px){
+  .grid,.stats{grid-template-columns:1fr}
+  .hero{padding:65px 0 50px}
+  .panel{padding:20px}
 }
 </style>
 </head>
 
 <body>
+
 <header>
   <div class="container nav">
     <a class="logo" href="#">NEO-AXF <span>AI</span></a>
@@ -147,13 +151,14 @@ footer {
     <nav class="navlinks" id="navlinks">
       <a href="#home">Home</a>
       <a href="#platform">AI Platform</a>
-      <a href="#studio">AI Studio</a>
+      <a href="#studio">AI Chat</a>
       <a href="#about">About</a>
     </nav>
   </div>
 </header>
 
 <main>
+
 <section class="hero" id="home">
   <div class="container">
     <span class="eyebrow">THE FUTURE OF INTELLIGENCE</span>
@@ -164,7 +169,7 @@ footer {
     </p>
     <div class="actions">
       <a class="btn" href="#platform">Explore AI Platform</a>
-      <a class="btn secondary" href="#about">Discover NEO-AXF</a>
+      <a class="btn secondary" href="#studio">Start AI Chat</a>
     </div>
     <div class="stats">
       <div class="stat"><strong>12+</strong><span>AI Tool Categories</span></div>
@@ -178,70 +183,83 @@ footer {
   <div class="container">
     <div class="section-head">
       <h2>Explore the <span class="gradient">AI Universe</span></h2>
-      <p>Multiple AI capabilities, designed for one connected platform.</p>
+      <p>Discover the NEO-AXF AI ecosystem.</p>
     </div>
 
     <div class="grid">
+
       <article class="card">
         <div class="icon">🤖</div><h3>AI Chat</h3>
-        <p>Ask questions, brainstorm ideas and get AI assistance.</p>
-        <button onclick="openTool('AI Chat')">Explore Tool</button>
+        <p>Ask questions and get AI assistance.</p>
+        <button onclick="openTool('AI Chat')">Open AI Chat</button>
       </article>
+
       <article class="card">
         <div class="icon">🎨</div><h3>Image Studio</h3>
-        <p>Plan AI image creation and creative visual workflows.</p>
+        <p>AI image creation workspace.</p>
         <button onclick="openTool('Image Studio')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">🎬</div><h3>Video Studio</h3>
-        <p>Explore video concepts, scripts and generation workflows.</p>
+        <p>AI video creation workspace.</p>
         <button onclick="openTool('Video Studio')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">🌐</div><h3>Website Builder</h3>
-        <p>Plan modern websites with AI-assisted development.</p>
+        <p>AI-assisted website development.</p>
         <button onclick="openTool('Website Builder')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">📱</div><h3>App Builder</h3>
-        <p>Turn application ideas into structured development plans.</p>
+        <p>Plan and develop applications.</p>
         <button onclick="openTool('App Builder')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">💻</div><h3>Coding Assistant</h3>
-        <p>Get help with programming, debugging and code design.</p>
+        <p>Programming and debugging assistance.</p>
         <button onclick="openTool('Coding Assistant')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">🎧</div><h3>Audio Studio</h3>
-        <p>Explore voice, speech and audio production workflows.</p>
+        <p>AI voice and audio workflows.</p>
         <button onclick="openTool('Audio Studio')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">📄</div><h3>Document AI</h3>
-        <p>Plan document analysis, writing and summarization tools.</p>
+        <p>Writing and document assistance.</p>
         <button onclick="openTool('Document AI')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">⚡</div><h3>Automation</h3>
-        <p>Design workflows to simplify repetitive digital tasks.</p>
+        <p>Smart digital workflow planning.</p>
         <button onclick="openTool('Automation')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">🎓</div><h3>AI Education</h3>
-        <p>Support learning, explanations and personalized study.</p>
+        <p>Learning and educational assistance.</p>
         <button onclick="openTool('AI Education')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">🌍</div><h3>Translation AI</h3>
-        <p>Explore multilingual communication and translation.</p>
+        <p>Multilingual communication support.</p>
         <button onclick="openTool('Translation AI')">Explore Tool</button>
       </article>
+
       <article class="card">
         <div class="icon">📊</div><h3>Business AI</h3>
-        <p>Explore business research, planning and productivity.</p>
+        <p>Business research and productivity.</p>
         <button onclick="openTool('Business AI')">Explore Tool</button>
       </article>
+
     </div>
   </div>
 </section>
@@ -249,34 +267,43 @@ footer {
 <section class="section" id="studio">
   <div class="container">
     <div class="section-head">
-      <h2>AI Prompt <span class="gradient">Workspace</span></h2>
-      <p>A first interface for planning your AI requests.</p>
+      <h2>NEO-AXF <span class="gradient">AI Assistant</span></h2>
+      <p>Ask your question and receive an AI-generated response.</p>
     </div>
+
     <div class="panel">
-      <div class="form-grid">
-        <div class="field">
-          <label for="toolType">Choose a workspace</label>
-          <input id="toolType" list="toolOptions" placeholder="Example: AI Chat">
-          <datalist id="toolOptions">
-            <option value="AI Chat"><option value="Image Studio">
-            <option value="Video Studio"><option value="Website Builder">
-            <option value="App Builder"><option value="Coding Assistant">
-          </datalist>
-        </div>
-        <div class="field">
-          <label for="userEmail">Email (optional)</label>
-          <input id="userEmail" type="email" placeholder="you@example.com">
-        </div>
-        <div class="field full">
-          <label for="prompt">Describe what you want to create</label>
-          <textarea id="prompt" placeholder="Write your idea or instruction here..."></textarea>
-        </div>
-        <div class="field full">
-          <button class="btn" onclick="submitPrompt()">Submit Request</button>
-          <p class="status" id="promptStatus" aria-live="polite">
-            This is currently a demonstration interface. AI generation is not connected yet.
-          </p>
-        </div>
+      <div class="field">
+        <label for="toolType">Select Workspace</label>
+        <select id="toolType">
+          <option>AI Chat</option>
+          <option>Image Studio</option>
+          <option>Video Studio</option>
+          <option>Website Builder</option>
+          <option>App Builder</option>
+          <option>Coding Assistant</option>
+          <option>Audio Studio</option>
+          <option>Document AI</option>
+          <option>Automation</option>
+          <option>AI Education</option>
+          <option>Translation AI</option>
+          <option>Business AI</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="prompt">Your Message</label>
+        <textarea id="prompt" placeholder="বাংলা অথবা English-এ আপনার প্রশ্ন লিখুন..."></textarea>
+      </div>
+
+      <button class="btn" id="sendBtn" onclick="submitPrompt()">
+        Send to NEO-AXF AI
+      </button>
+
+      <p class="status" id="promptStatus">AI Assistant is ready.</p>
+
+      <div class="reply" id="aiReply">
+        <h3>NEO-AXF AI Response</h3>
+        <div id="replyText"></div>
       </div>
     </div>
   </div>
@@ -288,18 +315,19 @@ footer {
       <div class="section-head">
         <h2>Building the <span class="gradient">Future with AI</span></h2>
         <p>
-          NEO-AXF AI TECHNOLOGIES is an ambitious platform vision
-          focused on making AI capabilities accessible through one workspace.
+          NEO-AXF AI TECHNOLOGIES is building a unified
+          workspace for artificial intelligence, research and innovation.
         </p>
       </div>
       <div class="grid">
-        <div class="card"><div class="icon">🔬</div><h3>Research</h3><p>Explore new ideas and emerging technologies.</p></div>
-        <div class="card"><div class="icon">🚀</div><h3>Innovation</h3><p>Build useful tools for people and businesses.</p></div>
-        <div class="card"><div class="icon">🌏</div><h3>Accessibility</h3><p>Work toward accessible AI experiences for everyone.</p></div>
+        <div class="card"><div class="icon">🔬</div><h3>Research</h3><p>Explore new ideas and technologies.</p></div>
+        <div class="card"><div class="icon">🚀</div><h3>Innovation</h3><p>Build useful digital tools.</p></div>
+        <div class="card"><div class="icon">🌏</div><h3>Accessibility</h3><p>Make AI experiences accessible.</p></div>
       </div>
     </div>
   </div>
 </section>
+
 </main>
 
 <footer>
@@ -307,34 +335,72 @@ footer {
     <p><strong>NEO-AXF AI TECHNOLOGIES</strong></p>
     <p>Innovating Intelligence. Empowering the Future.</p>
     <p>© <span id="year"></span> NEO-AXF AI TECHNOLOGIES. All rights reserved.</p>
-    <p>Prototype interface — AI services require backend and provider integrations.</p>
+    <p>Some AI tools are under development and require separate integrations.</p>
   </div>
 </footer>
 
 <script>
-function toggleMenu() {
+const API_URL = "https://neo-axf-ai-backned.subhojitganguly309.workers.dev/";
+
+function toggleMenu(){
   document.getElementById("navlinks").classList.toggle("open");
 }
-function openTool(name) {
+
+function openTool(name){
   document.getElementById("toolType").value = name;
   document.getElementById("studio").scrollIntoView({behavior:"smooth"});
-  document.getElementById("promptStatus").textContent =
-    name + " selected. This demonstration is not connected to an AI service yet.";
+  document.getElementById("prompt").focus();
 }
-function submitPrompt() {
-  const tool = document.getElementById("toolType").value.trim();
+
+async function submitPrompt(){
+  const tool = document.getElementById("toolType").value;
   const prompt = document.getElementById("prompt").value.trim();
   const status = document.getElementById("promptStatus");
+  const button = document.getElementById("sendBtn");
+  const replyBox = document.getElementById("aiReply");
+  const replyText = document.getElementById("replyText");
 
-  if (!tool || !prompt) {
-    status.textContent = "Please choose a workspace and enter your request.";
+  if(!prompt){
+    status.textContent = "Please enter your message first.";
     return;
   }
-  status.textContent =
-    "Your request is ready for integration: " + tool +
-    ". AI processing is not enabled in this prototype.";
+
+  button.disabled = true;
+  button.textContent = "AI is thinking...";
+  status.textContent = "Connecting to NEO-AXF AI...";
+  replyBox.style.display = "none";
+  replyText.textContent = "";
+
+  try{
+    const response = await fetch(API_URL,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        message:"You are NEO-AXF AI Assistant. The selected workspace is: " +
+          tool + ". Answer helpfully and clearly.\n\nUser request: " + prompt
+      })
+    });
+
+    const data = await response.json();
+
+    if(!response.ok){
+      throw new Error(data.details || data.error || "AI request failed.");
+    }
+
+    replyText.textContent = data.reply || "No response received.";
+    replyBox.style.display = "block";
+    status.textContent = "Response received successfully.";
+
+  }catch(error){
+    status.textContent = "Connection error: " + error.message;
+  }finally{
+    button.disabled = false;
+    button.textContent = "Send to NEO-AXF AI";
+  }
 }
+
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
+
 </body>
 </html>
