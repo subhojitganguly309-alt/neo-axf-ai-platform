@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEO-AXF AI | All in One AI Platform</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #080d1b;
+  color: white;
+}
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #202a40;
+}
+.logo { font-size: 23px; font-weight: bold; color: #64b5ff; }
+nav a {
+  color: #d5deee;
+  text-decoration: none;
+  margin-left: 18px;
+}
+.hero {
+  text-align: center;
+  padding: 85px 20px 55px;
+}
+.hero h1 { font-size: 43px; }
+.hero h1 span { color: #64b5ff; }
+.hero p { color: #aab8d0; line-height: 1.8; }
+input {
+  width: 90%;
+  max-width: 600px;
+  padding: 17px;
+  border-radius: 10px;
+  border: 1px solid #344565;
+  background: #111b30;
+  color: white;
+  margin-top: 20px;
+}
+button {
+  padding: 14px 25px;
+  background: #287eea;
+  color: white;
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+  margin: 10px;
+}
+.tools {
+  padding: 35px 7%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 18px;
+}
+.card {
+  background: #111b30;
+  border: 1px solid #273650;
+  border-radius: 14px;
+  padding: 25px;
+}
+.card h3 { color: #75bdff; }
+.card p { color: #aab8d0; }
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #8291aa;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">NEO-AXF AI</div>
+  <nav>
+    <a href="#tools">AI Tools</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>One Platform.<br><span>Unlimited AI Possibilities.</span></h1>
+  <p>Discover AI Chat, Image, Video, Website and App Creation<br>
+  in one powerful platform.</p>
+  <input id="prompt" placeholder="What do you want to create with AI?">
+  <br>
+  <button onclick="startAI()">Get Started</button>
+</section>
+
+<section class="tools" id="tools">
+  <div class="card">
+    <h3>🤖 AI Chat</h3>
+    <p>Smart AI conversations and research.</p>
+  </div>
+  <div class="card">
+    <h3>🎨 AI Image Studio</h3>
+    <p>Create images from text prompts.</p>
+  </div>
+  <div class="card">
+    <h3>🎬 AI Video Studio</h3>
+    <p>Explore AI-powered video creation.</p>
+  </div>
+  <div class="card">
+    <h3>🌐 AI Website Builder</h3>
+    <p>Build websites using AI prompts.</p>
+  </div>
+  <div class="card">
+    <h3>📱 AI App Builder</h3>
+    <p>Design and develop applications.</p>
+  </div>
+  <div class="card">
+    <h3>⚡ AI Automation</h3>
+    <p>Automate everyday business tasks.</p>
+  </div>
+</section>
+
+<footer id="about">
+  © 2026 NEO-AXF AI TECHNOLOGIES
+  <p>One Platform. Unlimited Possibilities.</p>
+</footer>
+
+<script>
+function startAI() {
+  const prompt = document.getElementById("prompt").value;
+  if (!prompt.trim()) {
+    alert("Please enter your idea first!");
+    return;
+  }
+  alert("Welcome to NEO-AXF AI! AI integration is coming soon.");
+}
+</script>
+
+</body>
+</html>
